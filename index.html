@@ -1,432 +1,103 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BYVEEF | Hangers met liefde</title>
+<title>BYVEEF | Hand-painted hangers</title>
 <style>
-:root {
-  --pink: #e8b9c9;
-  --cream: #fffaf4;
-  --mint: #dcebe0;
-  --brown: #59463f;
-  --rose: #a95f78;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--cream);
-  color: var(--brown);
-}
-header {
-  text-align: center;
-  padding: 25px 15px 18px;
-  background: #fffdfb;
-  border-bottom: 1px solid #f1dce3;
-}
-.logo {
-  font-family: Georgia, serif;
-  font-size: clamp(38px, 7vw, 58px);
-  letter-spacing: 8px;
-  margin: 0;
-  color: #b66f89;
-}
-.tagline { font-size: 12px; letter-spacing: 3px; }
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px;
-  flex-wrap: wrap;
-  background: #fffdfb;
-}
-nav a { color: var(--brown); text-decoration: none; font-size: 14px; }
-.hero {
-  text-align: center;
-  padding: 65px 20px;
-  background: linear-gradient(135deg, #f7e3e9, #fff6ed, #e3eee5);
-}
-.hero h2 {
-  font: 42px Georgia, serif;
-  margin: 0 0 14px;
-}
-.hero p { line-height: 1.8; }
-.button {
-  display: inline-block;
-  border: 0;
-  border-radius: 30px;
-  padding: 13px 22px;
-  background: var(--rose);
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 14px;
-}
-section { padding: 45px 18px; scroll-margin-top: 15px; }
-.section-title {
-  text-align: center;
-  font: 32px Georgia, serif;
-  margin: 0 0 12px;
-}
-.intro { text-align: center; line-height: 1.7; }
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 18px;
-  max-width: 1000px;
-  margin: 28px auto 0;
-}
-.product {
-  background: white;
-  border: 1px solid #f0dfe3;
-  border-radius: 15px;
-  padding: 22px 15px;
-  text-align: center;
-}
-.product-art { font-size: 44px; padding: 12px; }
-.product h3 { font: 24px Georgia, serif; }
-.price { font-size: 22px; color: var(--rose); font-weight: bold; }
-.product p { line-height: 1.6; font-size: 14px; }
-#designer { background: #f5e8eb; }
-.designer {
-  max-width: 760px;
-  margin: 25px auto;
-  padding: 24px;
-  background: white;
-  border-radius: 18px;
-}
-label { display: block; font-size: 14px; font-weight: bold; margin: 16px 0 7px; }
-select, input, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #dfcbd1;
-  border-radius: 9px;
-  background: #fffdfb;
-  color: var(--brown);
-  font: inherit;
-}
-.preview {
-  margin: 20px auto;
-  max-width: 270px;
-  min-height: 110px;
-  border: 1px solid #eedde2;
-  border-radius: 15px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 15px;
-  background: #fffaf4;
-}
-.hanger { font-size: 58px; line-height: 1.2; }
-#previewText { font-weight: bold; }
-.checkline { display: flex; gap: 10px; align-items: center; margin: 12px 0; }
-.checkline input { width: auto; }
-.checkline label { margin: 0; font-weight: normal; }
-.total {
-  background: var(--mint);
-  border-radius: 12px;
-  padding: 16px;
-  margin: 18px 0;
-  line-height: 1.8;
-}
-.small { font-size: 12px; line-height: 1.6; }
-.notice { font-size: 13px; line-height: 1.7; }
-footer {
-  padding: 30px 15px;
-  text-align: center;
-  background: #fffdfb;
-  line-height: 1.8;
-}
-button:hover, .button:hover { opacity: .85; }
+:root{--ink:#29221f;--cream:#fffaf4;--pink:#e9a6b5;--wine:#793f4e;--gold:#b88b45;--line:#eadfd5}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+header{padding:30px 20px 22px;text-align:center;background:#f5e6df;border-bottom:1px solid var(--line)}
+.logo{font-family:Georgia,serif;font-size:clamp(42px,8vw,78px);letter-spacing:.16em;margin:0;color:var(--wine)}
+.tagline{letter-spacing:.2em;text-transform:uppercase;font-size:11px;margin-top:10px}
+nav{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;padding:14px;border-bottom:1px solid var(--line);font-size:13px}
+nav a{color:var(--ink);text-decoration:none}
+.hero{padding:48px 20px 38px;text-align:center;max-width:850px;margin:auto}
+.eyebrow{color:var(--wine);text-transform:uppercase;letter-spacing:.18em;font-size:11px}
+h1,h2,h3{font-family:Georgia,serif;font-weight:normal}
+.hero h1{font-size:clamp(34px,5vw,55px);line-height:1.08;margin:15px 0}
+.hero p{max-width:560px;line-height:1.7;margin:0 auto 22px;color:#665b55}
+.btn{display:inline-block;background:var(--wine);color:white;border:0;padding:13px 22px;text-decoration:none;cursor:pointer;font-size:13px;letter-spacing:.04em}
+.section{padding:38px 20px;max-width:1100px;margin:auto}
+.section-title{text-align:center;margin-bottom:26px}
+.section-title h2{font-size:34px;margin:8px 0}
+.sets{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.set-card{border:1px solid var(--line);background:white;padding:24px;text-align:center}
+.set-card h3{font-size:24px;margin:8px 0}
+.price{font-size:22px;color:var(--wine);margin:10px}
+.set-card p{color:#6b605b;font-size:14px;line-height:1.5;min-height:42px}
+.customizer{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.panel{background:white;border:1px solid var(--line);padding:22px}
+.preview{background:#f6eee8;min-height:260px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;padding:16px}
+.hanger{width:100px;height:145px}
+.field{margin:15px 0}
+label{display:block;font-size:13px;margin-bottom:7px}
+select,input{width:100%;padding:11px;border:1px solid #d9c9be;background:#fffdfb;color:var(--ink);font:inherit}
+.color-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.swatch{height:30px;border:1px solid #d4c9c2;cursor:pointer;border-radius:50%}
+.swatch.selected{outline:2px solid var(--wine);outline-offset:2px}
+.patterns{display:flex;gap:8px;flex-wrap:wrap}
+.patterns button{padding:8px 10px;background:#fff;border:1px solid var(--line);cursor:pointer}
+.patterns button.selected{background:var(--wine);color:white}
+.checkline{display:flex;align-items:center;gap:8px;font-size:13px;margin:12px 0}
+.checkline input{width:auto}
+.note{font-size:12px;line-height:1.6;color:#746861}
+.cart{border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
+footer{text-align:center;background:#f5e6df;padding:28px 20px;margin-top:35px;font-size:12px;line-height:1.7}
+@media(max-width:700px){.customizer{grid-template-columns:1fr}.hero{padding-top:35px}.panel{padding:16px}}
 </style>
 </head>
 <body>
-
 <header>
-  <h1 class="logo">BYVEEF</h1>
-  <div class="tagline">HANDGEMAAKT MET LIEFDE ♡</div>
+  <p class="logo">BYVEEF</p>
+  <div class="tagline">Hand-painted clothing hangers</div>
 </header>
-
-<nav>
-  <a href="#home">Home</a>
-  <a href="#shop">De collecties</a>
-  <a href="#designer">Maak jouw hanger</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<main>
-<section class="hero" id="home">
-  <p>✿ KLEINE DETAILS, GROOT GELUK ✿</p>
-  <h2>Een hanger, helemaal van jou.</h2>
-  <p>Met de hand beschilderde kledinghangers,<br>
-  speciaal voor jouw mooiste outfits.</p>
-  <a class="button" href="#shop">ONTDEK DE COLLECTIE</a>
-  <p>♡ Met liefde gemaakt door BYVEEF ♡</p>
+<nav><a href="#sets">De sets</a><a href="#custom">Ontwerp jouw set</a><a href="#contact">Contact</a></nav>
+<section class="hero">
+  <div class="eyebrow">Met liefde met de hand gemaakt</div>
+  <h1>Een bijzondere hanger,<br>helemaal van jou.</h1>
+  <p>Geef je kledingkast een persoonlijke touch met handgeschilderde kledinghangers. Kies jouw kleuren, prints en details en stel een eigen set samen.</p>
+  <a class="btn" href="#custom">Ontwerp jouw set</a>
 </section>
-
-<section id="shop">
-  <h2 class="section-title">De BYVEEF collecties</h2>
-  <p class="intro">Kies jouw favoriete set. Elke hanger krijgt liefde en aandacht.</p>
-  <div class="products">
-    <article class="product">
-      <div class="product-art">🎀</div>
-      <h3>Duo</h3>
-      <p>2 handgeschilderde hangers</p>
-      <div class="price">€ 7,00</div>
-      <button class="button" onclick="chooseSet(2)">Kies Duo</button>
-    </article>
-    <article class="product">
-      <div class="product-art">🌷</div>
-      <h3>Trio</h3>
-      <p>3 hangers, met personalisatie mogelijk</p>
-      <div class="price">€ 10,50</div>
-      <button class="button" onclick="chooseSet(3)">Kies Trio</button>
-    </article>
-    <article class="product">
-      <div class="product-art">♡</div>
-      <h3>Collection</h3>
-      <p>5 hangers voor jouw garderobe</p>
-      <div class="price">€ 16,00</div>
-      <button class="button" onclick="chooseSet(5)">Kies Collection</button>
-    </article>
-    <article class="product">
-      <div class="product-art">✿</div>
-      <h3>Grand Collection</h3>
-      <p>7 hangers om verliefd op te worden</p>
-      <div class="price">€ 21,00</div>
-      <button class="button" onclick="chooseSet(7)">Kies Grand Collection</button>
-    </article>
-  </div>
-  <p class="intro small">Prijzen zijn voorlopige voorbeeldprijzen. Verzendkosten worden apart besproken.</p>
-</section>
-
-<section id="designer">
-  <h2 class="section-title">Create Your Own</h2>
-  <p class="intro">Jij kiest de kleuren, de print en de details. ♡</p>
-  <div class="designer">
-    <label for="setSize">1. Kies je set</label>
-    <select id="setSize" onchange="updateDesigner()">
-      <option value="3">Trio — 3 hangers (€ 10,50)</option>
-      <option value="5">Collection — 5 hangers (€ 16,00)</option>
-      <option value="7">Grand Collection — 7 hangers (€ 21,00)</option>
-    </select>
-
-    <label for="hangerNumber">2. Welke hanger wil je ontwerpen?</label>
-    <select id="hangerNumber" onchange="updatePreview()">
-      <option value="1">Hanger 1</option>
-      <option value="2">Hanger 2</option>
-      <option value="3">Hanger 3</option>
-    </select>
-
-    <div class="preview" id="preview">
-      <div class="hanger">🎀</div>
-      <div id="previewText">Jouw BYVEEF hanger</div>
-    </div>
-
-    <label for="color">3. Kies een kleur</label>
-    <select id="color" onchange="updatePreview()">
-      <option value="Pastelroze">Pastelroze</option>
-      <option value="Babyroze">Babyroze</option>
-      <option value="Crème">Crème</option>
-      <option value="Mintgroen">Mintgroen</option>
-      <option value="Pasteloranje">Pasteloranje</option>
-      <option value="Lila">Lila</option>
-      <option value="Babyblauw">Babyblauw</option>
-      <option value="Wit">Wit</option>
-      <option value="Lichtbruin">Lichtbruin</option>
-      <option value="Zwart">Zwart</option>
-    </select>
-
-    <label for="pattern">4. Kies een print</label>
-    <select id="pattern" onchange="updatePreview()">
-      <option value="Geen print">Geen print</option>
-      <option value="Stippen">Stippen (+ € 0,25)</option>
-      <option value="Strepen">Strepen (+ € 0,25)</option>
-      <option value="Hartjes">Hartjes (+ € 0,25)</option>
-      <option value="Bloemen">Bloemen (+ € 0,50)</option>
-      <option value="Cow print">Cow print (+ € 0,50)</option>
-      <option value="Panterprint">Panterprint (+ € 0,50)</option>
-      <option value="Tijgerprint">Tijgerprint (+ € 0,75)</option>
-      <option value="Ruitjes">Ruitjes (+ € 0,50)</option>
-      <option value="Marmer">Marmer (+ € 1,00)</option>
-    </select>
-
-    <label for="symbol">5. Kies je middensymbool</label>
-    <select id="symbol" onchange="updatePreview()">
-      <option value="♡">Hartje</option>
-      <option value="★">Ster</option>
-      <option value="○">Cirkel</option>
-      <option value="🎀">Strikje</option>
-    </select>
-
-    <label for="personal">6. Personalisatie (optioneel)</label>
-    <select id="personal" onchange="toggleName();updatePreview()">
-      <option value="nee">Geen personalisatie</option>
-      <option value="ja">Naam, initialen of kort woord (+ € 1,50)</option>
-    </select>
-    <input id="nameText" maxlength="15" placeholder="Typ een naam of initialen" hidden oninput="updatePreview()">
-
-    <label for="details">Extra wensen (optioneel)</label>
-    <textarea id="details" rows="2" placeholder="Bijvoorbeeld: kleine witte strikjes of gouden details"></textarea>
-
-    <button class="button" onclick="saveHanger()">Bewaar dit hangerontwerp</button>
-
-    <div class="total">
-      <strong>Jouw bestelling</strong>
-      <div id="saved">Je hebt nog geen hangers ontworpen.</div>
-      <div><strong>Totaal: € <span id="total">10,50</span></strong></div>
-    </div>
-
-    <label for="customerName">Jouw naam</label>
-    <input id="customerName" placeholder="Voornaam">
-
-    <label for="customerEmail">E-mailadres van een ouder/verzorger of contactpersoon</label>
-    <input id="customerEmail" type="email" placeholder="E-mailadres">
-
-    <button class="button" onclick="makeRequest()">Maak mijn bestelaanvraag</button>
-    <p class="notice" id="requestResult" aria-live="polite"></p>
-    <p class="small">Dit is een demo: er wordt nog geen bestelling verzonden of betaald. De bestelaanvraag wordt op je scherm getoond, zodat je die zelf kunt kopiëren. Vraag een ouder/verzorger om hulp bij echte bestellingen en klantgegevens.</p>
+<section class="section" id="sets">
+  <div class="section-title"><div class="eyebrow">Kies jouw favoriet</div><h2>Onze sets</h2></div>
+  <div class="sets">
+    <article class="set-card"><div class="eyebrow">2 hangers</div><h3>Duo</h3><div class="price">€ 7,00</div><p>Een mooi begin of een klein cadeautje.</p><a class="btn" href="#custom" onclick="chooseSet(2)">Kies Duo</a></article>
+    <article class="set-card"><div class="eyebrow">3 hangers</div><h3>Trio</h3><div class="price">€ 10,50</div><p>Mix jouw favoriete kleuren en prints.</p><a class="btn" href="#custom" onclick="chooseSet(3)">Kies Trio</a></article>
+    <article class="set-card"><div class="eyebrow">5 hangers</div><h3>Collection</h3><div class="price">€ 16,00</div><p>Een eigen kleine collectie voor je kast.</p><a class="btn" href="#custom" onclick="chooseSet(5)">Kies Collection</a></article>
+    <article class="set-card"><div class="eyebrow">7 hangers</div><h3>Grand Collection</h3><div class="price">€ 21,00</div><p>Voor een kast vol persoonlijke details.</p><a class="btn" href="#custom" onclick="chooseSet(7)">Kies Grand</a></article>
   </div>
 </section>
-
-<section id="contact">
-  <h2 class="section-title">Met liefde gemaakt ♡</h2>
-  <p class="intro">Vragen of speciale wensen? BYVEEF denkt graag met je mee.</p>
-  <p class="intro">Instagram: voeg hier later jullie account toe.</p>
+<section class="section" id="custom">
+  <div class="section-title"><div class="eyebrow">Jouw kleuren, jouw stijl</div><h2>Ontwerp jouw set</h2><p class="note">De preview is een voorbeeld van jouw ontwerp. Duo is een vaste set; personaliseren kan vanaf 3 hangers.</p></div>
+  <div class="customizer">
+    <div class="panel">
+      <div class="preview" id="preview"></div>
+      <p class="note">Zo ziet jouw gekozen kleur, print en symbool er ongeveer uit.</p>
+    </div>
+    <div class="panel">
+      <div class="field"><label for="setSize">Kies een set</label><select id="setSize" onchange="renderPreview()"><option value="2">Duo — 2 hangers — € 7,00 (vaste set)</option><option value="3" selected>Trio — 3 hangers — € 10,50</option><option value="5">Collection — 5 hangers — € 16,00</option><option value="7">Grand Collection — 7 hangers — € 21,00</option></select></div>
+      <div class="field"><label>Kleur hanger</label><div class="color-grid" id="colors"></div></div>
+      <div class="field"><label for="pattern">Print</label><select id="pattern" onchange="renderPreview()"><option value="none">Effen</option><option value="cow">Koeienprint</option><option value="leopard">Panterprint</option><option value="flowers">Bloemen</option><option value="dots">Stippen</option><option value="stripes">Strepen</option><option value="hearts">Hartjes</option><option value="checks">Ruitjes</option><option value="tiger">Tijgerprint</option><option value="marble">Marmer</option></select></div>
+      <div class="field"><label for="symbol">Symbool</label><select id="symbol" onchange="renderPreview()"><option value="heart">Hart</option><option value="star">Ster</option><option value="circle">Cirkel</option><option value="bow">Strik</option></select></div>
+      <div class="field"><label for="name">Naam, initialen of kort woord (+ € 1,50 per hanger)</label><input id="name" maxlength="12" placeholder="Bijv. VEEF" oninput="renderPreview()"></div>
+      <label class="checkline"><input type="checkbox" id="gold" onchange="renderPreview()"> Gouden details (+ € 0,75 per hanger)</label>
+      <button class="btn" onclick="addToCart()">Voeg ontwerp toe</button>
+      <div class="cart"><strong id="cartTitle">Jouw winkelmandje</strong><p id="cartText" class="note">Je hebt nog niets toegevoegd.</p><p class="note">Dit is op dit moment een voorbeeldwinkelmandje. Betalen en echte bestellingen zijn nog niet aangesloten.</p></div>
+    </div>
+  </div>
 </section>
-</main>
-
-<footer>
-  <div class="logo" style="font-size:30px">BYVEEF</div>
-  <p>Met liefde met de hand beschilderd. ♡</p>
-  <p class="small">Een beginnende collectie vol kleur, creativiteit en kleine details.</p>
-</footer>
-
+<footer id="contact"><strong>BYVEEF</strong><br>Hand-painted clothing hangers<br><span>Voor vragen over een bestelling kun je hier later je contactgegevens toevoegen.</span></footer>
 <script>
-const prices = {2:7, 3:10.5, 5:16, 7:21};
-const printPrices = {
-  "Geen print":0, "Stippen":0.25, "Strepen":0.25,
-  "Hartjes":0.25, "Bloemen":0.5, "Cow print":0.5,
-  "Panterprint":0.5, "Tijgerprint":0.75,
-  "Ruitjes":0.5, "Marmer":1
-};
-let designs = {};
-
-function money(n) {
-  return n.toFixed(2).replace(".", ",");
-}
-function size() {
-  return Number(document.getElementById("setSize").value);
-}
-function chooseSet(n) {
-  if (n === 2) {
-    document.getElementById("shop").scrollIntoView({behavior:"smooth"});
-    alert("De Duo-set is € 7,00. Personalisatie is beschikbaar vanaf 3 hangers.");
-    return;
-  }
-  document.getElementById("setSize").value = String(n);
-  updateDesigner();
-  document.getElementById("designer").scrollIntoView({behavior:"smooth"});
-}
-function updateDesigner() {
-  const n = size();
-  document.getElementById("hangerNumber").innerHTML =
-    Array.from({length:n},(_,i)=>`<option value="${i+1}">Hanger ${i+1}</option>`).join("");
-  designs = {};
-  document.getElementById("saved").textContent = "Je hebt nog geen hangers ontworpen.";
-  updatePreview();
-  updateTotal();
-}
-function toggleName() {
-  const field = document.getElementById("nameText");
-  field.hidden = document.getElementById("personal").value !== "ja";
-}
-function currentDesign() {
-  return {
-    color:document.getElementById("color").value,
-    pattern:document.getElementById("pattern").value,
-    symbol:document.getElementById("symbol").value,
-    personal:document.getElementById("personal").value === "ja"
-      ? document.getElementById("nameText").value.trim() : "",
-    details:document.getElementById("details").value.trim()
-  };
-}
-function updatePreview() {
-  const d = currentDesign();
-  const backgrounds = {
-    "Pastelroze":"#f3d5df","Babyroze":"#f8e3eb","Crème":"#fff5e3",
-    "Mintgroen":"#d9eee1","Pasteloranje":"#f9dfc9","Lila":"#e8def5",
-    "Babyblauw":"#dcecf7","Wit":"#ffffff","Lichtbruin":"#e7d4c2","Zwart":"#333333"
-  };
-  const preview = document.getElementById("preview");
-  preview.style.background = backgrounds[d.color] || "#fffaf4";
-  preview.style.color = d.color === "Zwart" ? "#ffffff" : "#59463f";
-  document.getElementById("previewText").textContent =
-    d.personal || `${d.color} · ${d.pattern}`;
-  preview.querySelector(".hanger").textContent = d.symbol;
-}
-function saveHanger() {
-  const i = Number(document.getElementById("hangerNumber").value);
-  designs[i] = currentDesign();
-  const entries = Object.keys(designs).sort((a,b)=>a-b).map(i => {
-    const d = designs[i];
-    return `Hanger ${i}: ${d.color}, ${d.pattern}, symbool ${d.symbol}` +
-      (d.personal ? `, tekst "${d.personal}"` : "") +
-      (d.details ? `, extra: ${d.details}` : "");
-  });
-  document.getElementById("saved").innerHTML = entries.length
-    ? entries.map(e=>`<div>${escapeText(e)}</div>`).join("")
-    : "Je hebt nog geen hangers ontworpen.";
-  updateTotal();
-}
-function escapeText(s) {
-  return s.replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[c]));
-}
-function updateTotal() {
-  let total = prices[size()];
-  Object.values(designs).forEach(d => {
-    total += printPrices[d.pattern] || 0;
-    if (d.personal) total += 1.5;
-  });
-  document.getElementById("total").textContent = money(total);
-}
-function makeRequest() {
-  const name = document.getElementById("customerName").value.trim();
-  const email = document.getElementById("customerEmail").value.trim();
-  const result = document.getElementById("requestResult");
-  if (!name || !email) {
-    result.textContent = "Vul je naam en e-mailadres in om een voorbeeld-aanvraag te maken.";
-    return;
-  }
-  if (Object.keys(designs).length !== size()) {
-    result.textContent = "Ontwerp en bewaar eerst alle " + size() + " hangers.";
-    return;
-  }
-  const summary = Object.keys(designs).sort((a,b)=>a-b).map(i => {
-    const d = designs[i];
-    return `Hanger ${i}: ${d.color}, ${d.pattern}, symbool ${d.symbol}` +
-      (d.personal ? `, tekst: ${d.personal}` : "") +
-      (d.details ? `, extra wensen: ${d.details}` : "");
-  }).join("\n");
-  const request = `BYVEEF - VOORBEELD BESTELAANVRAAG\nNaam: ${name}\nContact: ${email}\nSet: ${size()} hangers\n${summary}\nTotaal exclusief verzending: € ${document.getElementById("total").textContent}\n\nDit is een aanvraag, geen bevestigde bestelling of betaling.`;
-  result.innerHTML = "<strong>Je aanvraag is klaar om te kopiëren:</strong><br><textarea rows='10' readonly id='requestText'></textarea><button class='button' onclick='copyRequest()'>Kopieer aanvraag</button>";
-  document.getElementById("requestText").value = request;
-}
-function copyRequest() {
-  const field = document.getElementById("requestText");
-  field.select();
-  try {
-    document.execCommand("copy");
-    document.getElementById("requestResult").insertAdjacentHTML("beforeend","<p>Aanvraag gekopieerd. 💗</p>");
-  } catch(e) {
-    document.getElementById("requestResult").insertAdjacentHTML("beforeend","<p>Selecteer de tekst en kopieer met Ctrl+C.</p>");
-  }
-}
-updateDesigner();
+const palette=[["Beige","#d7bd9d"],["Bruin","#78533d"],["Crème","#f5ead8"],["Wit","#ffffff"],["Zwart","#252323"],["Rood","#b8323c"],["Oranje","#ed8b36"],["Geel","#f2cf4a"],["Lime","#b5d94b"],["Lichtgroen","#a6c99b"],["Donkergroen","#315c45"],["Mint","#a8ddd0"],["Lichtblauw","#a9d5ed"],["Donkerblauw","#344d83"],["Turquoise","#39b7b0"],["Lila","#c7b2e3"],["Paars","#754c9b"],["Lichtroze","#f2c1d0"],["Donkerroze","#cf658d"],["Neonroze","#ff4fa0"]];
+let selectedColor="#d7bd9d",cartItems=0,cartTotal=0;
+const colorsEl=document.getElementById("colors");
+palette.forEach(([name,hex],i)=>{const b=document.createElement("button");b.className="swatch"+(i===0?" selected":"");b.style.background=hex;b.title=name;b.setAttribute("aria-label",name);b.onclick=()=>{selectedColor=hex;document.querySelectorAll(".swatch").forEach(x=>x.classList.remove("selected"));b.classList.add("selected");renderPreview()};colorsEl.appendChild(b)});
+function chooseSet(n){document.getElementById("setSize").value=n;renderPreview()}
+function shapeMarkup(symbol,cx,cy){if(symbol==="heart")return `<path d="M ${cx} ${cy+7} C ${cx-19} ${cy-5},${cx-12} ${cy-16},${cx} ${cy-6} C ${cx+12} ${cy-16},${cx+19} ${cy-5},${cx} ${cy+7}Z" fill="#fff8f0" stroke="#b88b45" stroke-width="1"/>`;if(symbol==="star")return `<polygon points="${cx},${cy-13} ${cx+4},${cy-4} ${cx+14},${cy-4} ${cx+6},${cy+2} ${cx+9},${cy+12} ${cx},${cy+6} ${cx-9},${cy+12} ${cx-6},${cy+2} ${cx-14},${cy-4} ${cx-4},${cy-4}" fill="#fff8f0" stroke="#b88b45"/>`;if(symbol==="circle")return `<circle cx="${cx}" cy="${cy}" r="10" fill="#fff8f0" stroke="#b88b45" stroke-width="2"/>`;return `<path d="M ${cx} ${cy} C ${cx-22} ${cy-18},${cx-20} ${cy+10},${cx} ${cy} C ${cx+20} ${cy-18},${cx+22} ${cy+10},${cx} ${cy} M ${cx} ${cy} L ${cx-4} ${cy+15} M ${cx} ${cy} L ${cx+4} ${cy+15}" fill="#fff8f0" stroke="#b88b45" stroke-width="2"/>`}
+function renderPreview(){const n=+document.getElementById("setSize").value;const pattern=document.getElementById("pattern").value;const symbol=document.getElementById("symbol").value;const word=document.getElementById("name").value;const gold=document.getElementById("gold").checked;let out="";for(let i=0;i<n;i++){let spots="";if(pattern==="cow")spots='<path d="M25 49q15 -14 23 1t-8 18q-18 2 -15 -19 M56 83q12 -10 20 2t-10 15" fill="#29221f"/>';if(pattern==="leopard")spots='<g fill="#29221f"><ellipse cx="35" cy="53" rx="7" ry="5"/><ellipse cx="64" cy="63" rx="8" ry="5"/><ellipse cx="45" cy="91" rx="8" ry="5"/><ellipse cx="70" cy="111" rx="6" ry="4"/></g>';if(pattern==="dots")spots='<g fill="#fff8f0"><circle cx="35" cy="52" r="3"/><circle cx="64" cy="62" r="3"/><circle cx="42" cy="91" r="3"/><circle cx="69" cy="110" r="3"/></g>';if(pattern==="stripes"||pattern==="tiger")spots='<g stroke="'+(pattern==="tiger"?"#29221f":"#fff8f0")+'" stroke-width="4"><path d="M27 54l17 7 M51 75l18 8 M31 100l19 7 M56 118l16 6"/></g>';if(pattern==="hearts")spots='<g fill="#fff8f0"><path d="M35 55q-8 -9 -12 0q0 7 12 13q12 -6 12 -13q-4 -9 -12 0"/><path d="M63 91q-8 -9 -12 0q0 7 12 13q12 -6 12 -13q-4 -9 -12 0"/></g>';if(pattern==="checks")spots='<g stroke="#fff8f0" stroke-width="3"><path d="M27 53h48 M27 69h48 M35 45v32 M53 45v32 M71 45v32"/></g>';if(pattern==="flowers")spots='<g fill="#fff8f0" stroke="#b88b45" stroke-width="1"><circle cx="36" cy="58" r="7"/><circle cx="29" cy="58" r="5"/><circle cx="43" cy="58" r="5"/><circle cx="36" cy="51" r="5"/><circle cx="36" cy="65" r="5"/><circle cx="61" cy="98" r="7"/><circle cx="54" cy="98" r="5"/><circle cx="68" cy="98" r="5"/><circle cx="61" cy="91" r="5"/><circle cx="61" cy="105" r="5"/></g>';if(pattern==="marble")spots='<path d="M28 47q23 18 6 35t27 22t9 20 M58 42q-8 22 9 33t-2 33" fill="none" stroke="#fff8f0" stroke-width="3"/>';const hanger=`<svg class="hanger" viewBox="0 0 100 150" role="img" aria-label="Voorbeeld kledinghanger"><path d="M50 28 C48 18 56 15 59 21 C62 28 52 31 50 38 L50 48 L13 76 Q7 82 18 84 L82 84 Q93 82 87 76 L50 48" fill="none" stroke="${gold?"#b88b45":"#8d725c"}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 80 L83 80 L70 129 Q50 138 30 129 Z" fill="${selectedColor}" stroke="${gold?"#b88b45":"#8d725c"}" stroke-width="${gold?3:1.5}"/>${spots}${shapeMarkup(symbol,50,104)}${word?`<text x="50" y="122" text-anchor="middle" font-size="8" font-family="Georgia" fill="${selectedColor==="#252323"||selectedColor==="#344d83"||selectedColor==="#754c9b"?"white":"#382b27"}">${word.replace(/[<>&"]/g,"")}</text>`:""}</svg>`;out+=hanger}document.getElementById("preview").innerHTML=out}
+function addToCart(){const n=+document.getElementById("setSize").value;const base={2:7,3:10.5,5:16,7:21}[n];const extras=(document.getElementById("name").value?1.5*n:0)+(document.getElementById("gold").checked?.75*n:0);cartItems++;cartTotal+=base+extras;document.getElementById("cartTitle").textContent="Winkelmandje: "+cartItems+" ontwerp(en)";document.getElementById("cartText").textContent="Totaal van de voorbeeldbestelling: € "+cartTotal.toFixed(2).replace(".",",")+". Dit wordt nog niet echt verzonden."}
+renderPreview();
 </script>
 </body>
 </html>
